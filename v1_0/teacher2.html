@@ -1,0 +1,34 @@
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="../css/mystyle1.css">
+        <title>课程计划</title>
+    </head>
+
+    <body>
+        <div id="header">
+             <h1>
+                <img src="../pic/logo.png">
+            </h1>
+        </div>
+        <div id="section">
+            <table border="1">
+                <tr>
+                    <th>课程名</th>
+                    <th>课程时间</th>
+                </tr>
+                {% for item in items5 %}
+                <tr>
+                    <td>{{ item[1] }}</td>
+                    <td>{{ item[2] }}</td>
+                </tr>
+                {% endfor %}
+            </table>
+        </div>
+
+        <div id="footer">
+            <form action="/teacher" method="get" >
+                <input type="submit" value="返回">
+            </form>
+        </div>
+    </body>
+</html>

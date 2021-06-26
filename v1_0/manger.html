@@ -1,0 +1,56 @@
+<htlm>
+    <head>
+        <style>
+            ul{
+                position: absolute;
+                left:50%;
+                top:50%;
+                transform: translate(-50%, -50%);
+            }
+            button{
+                height: 80px;
+                margin-right: 30px;
+                margin-bottom: 40px;
+                width: 400px;
+                background-color: #4d85ee;
+                color:rgb(255, 255, 255);
+                border-radius: 25px;
+                text-align: center;
+                font-size: 30px;
+            }
+            button:hover{
+                background-color: #bdbdbd;
+                color: white;
+            }
+        </style>
+
+    <link rel="stylesheet" type="text/css" href="../css/mystyle1.css">
+    </head>
+
+    <body>
+    <div id="header">
+         <h1>
+            <img src="../pic/logo.png">
+        </h1>
+    </div>
+
+        <div class="page-header">
+
+        </div>
+    <div id="section">
+            <ul class="main-menu">
+                <button><a href="/plan">课程计划</a></button>
+                <br>
+                <br>
+                <button><a href="/class_pf">班级成绩</a>
+                </button>
+                <br>
+                <br>
+                 <form action="/logout" method="post" >
+                <input type="submit" value="退出登录">
+            </form>
+            </ul>
+    </div>
+
+    </body>
+</htlm>

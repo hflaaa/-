@@ -1,0 +1,43 @@
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="../css/mystyle1.css">
+        <title>课程计划</title>
+    </head>
+
+    <body>
+    <div id="header">
+        <h1>
+            <img src="../pic/logo.png">
+        </h1>
+    </div>
+
+    <div id="section">
+
+
+        <form action="/manger/plan" method="post">
+            班级: <input type="text" name="semester">
+            <input type="submit" value="查询">
+        </form>
+
+        <table border="1" >
+            <tr>
+                <th>班级名</th>
+                <th>课程名</th>
+                <th>课程时间</th>
+            </tr>
+            {% for item in items6 %}
+            <tr>
+                <td>{{ item[0] }}</td>
+                <td>{{ item[1] }}</td>
+                <td>{{ item[2] }}</td>
+            </tr>
+            {% endfor %}
+        </table>
+    </div>
+    <div id="footer">
+        <form action="/manger" method="get" >
+            <input type="submit" value="返回">
+        </form>
+    </div>
+    </body>
+</html>
